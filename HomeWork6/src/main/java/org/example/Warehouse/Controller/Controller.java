@@ -77,5 +77,7 @@ public class Controller {
 
         System.out.println("Заказы обработаны ( " + warehouse.getName() +")\n"
                 + view.viewAll(serviceOrder.goodsRelease(orders)));
+
+        System.out.println("Конечные остатки на складе " + warehouse.getName() +"\n" + view.viewAll(products));
     }
 }

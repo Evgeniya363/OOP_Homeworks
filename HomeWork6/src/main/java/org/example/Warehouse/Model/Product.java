@@ -45,10 +45,8 @@ public class Product extends Nomenclature implements Quantifiable {
         return sb
                 .append(id).append(" ")
                 .append(name).append(" ")
-                .append(maker).append(" ")
-                .append(amount).append(" ")
-                .append(measurement).append(" x ")
-                .append(price).append(" = ")
+                .append(info()).append(" ")
+                .append(amount).append(" = ")
                 .append(amount*price)
                 .toString();
     }
