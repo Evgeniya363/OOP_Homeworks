@@ -45,16 +45,4 @@ public class Real implements Parsable {
     public Parsable parse(String str) throws CalculateFormatException {
         return parseReal(str);
     }
-
-//    @Override
-//    public Parsable clear() {
-//        this.real = 0;
-//        return this;
-//    }
-//
-//    @Override
-//    public Parsable set(Real number) {
-//        this.real = number.real;
-//        return this;
-//    }
 }

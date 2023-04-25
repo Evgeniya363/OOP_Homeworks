@@ -5,7 +5,8 @@ import org.example.Model.Interfaces.Calculable;
 import org.example.Model.Classes.Complex;
 import org.example.Model.Exeptions.CalculateFormatException;
 
-public class CalculableComplexFactory extends  CalculableRealFactory {
+//public class CalculableComplexFactory extends  CalculableRealFactory {
+public class CalculableComplexFactory implements ICalculableFactory {
     private CalculatorComplex calc;
 
     public CalculableComplexFactory() {
@@ -20,12 +21,11 @@ public class CalculableComplexFactory extends  CalculableRealFactory {
 
     @Override
     public Complex createNumber(String str) throws CalculateFormatException {
-        return Complex.parseComplex(str);
+        return (Complex) (new Complex()).parse(str);
     }
 
     @Override
     public Calculable getCalculator() {
         return this.calc;
     }
-
 }

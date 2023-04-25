@@ -89,10 +89,6 @@ public class UserInOutOperations {
         showMessage(inputOperationMessage + "\n" + inputOperandMessage + "\n");
     }
 
-    public void showOperationMessage(String string) {
-        ui.output(string);
-    }
-
     public void exceptionOperation(String errorMsg,String message, String cl) {
         showMessage(errorMsg + "\n" + message +"\n" +cl);
     }

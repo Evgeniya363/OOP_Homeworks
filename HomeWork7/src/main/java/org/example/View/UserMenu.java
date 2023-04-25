@@ -48,11 +48,9 @@ public class UserMenu {
             switch (ui.input()) {
                 case "1":
                     calcFactory =  new CalculableRealFactory();
-//                    calc = calcFactory.createCalculator();
                     startCalculation("Real");
                     break;
                 case "2": calcFactory = new CalculableComplexFactory();
-//                    calc = calcFactory.createCalculator();
                     startCalculation("Complex");
                     break;
                 case "0": return;

@@ -20,7 +20,7 @@ public class CalculableRealFactory implements ICalculableFactory {
 
     @Override
     public Real createNumber(String str) throws CalculateFormatException {
-        return Real.parseReal(str);
+        return (Real) (new Real()).parse(str);
     }
 
     @Override
@@ -28,8 +28,4 @@ public class CalculableRealFactory implements ICalculableFactory {
         return this.calc;
     }
 
-//    @Override
-//    public Real create(String string) throws CalculateFormatException {
-//        return Real.parseReal(string);
-//    }
 }
